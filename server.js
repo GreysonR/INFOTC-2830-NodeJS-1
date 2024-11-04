@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import fs from "node:fs";
 
-const port = 80;
+const port = 3000;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 http.createServer((_req, res) => {
 	fs.readFile(join(__dirname, "public/index.html"), (err, data) => {
