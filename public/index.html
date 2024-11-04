@@ -54,12 +54,12 @@
 			
 			background: var(--white);
 			box-shadow: 0px 0px 30px -10px color-mix(in srgb, var(--black) 50%, transparent);
-			padding: 30px 60px;
+			padding: 100px 100px;
+			padding-top: 130px;
 
 			margin: 0 auto;
-			margin-top: 100px;
 
-			width: min(750px, 100vw);
+			width: min(700px, 100vw);
 			height: min-content;
 		}
 		
@@ -82,6 +82,14 @@
 			margin: 10px 0;
 		}
 
+		a {
+			color: var(--primary);
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+
 		.warning {
 			font-family: "Share", sans-serif;
 			font-weight: bold;
@@ -95,9 +103,14 @@
 				background-color: var(--warning);
 				display: inline-block;
 				font-style: italic;
-				padding: 5px 20px;
+				padding: 5px 10px;
 				border-radius: 5px;
+				margin-right: 8px;
 			}
+		}
+
+		::selection {
+			background-color: color-mix(in srgb, var(--black) 20%, transparent);
 		}
 	</style>
 </head>
@@ -111,9 +124,11 @@
 			<!-- history -->
 			 <h1>History of HTML</h1>
 			 <p>
-				
+				HTML was created by Tim Berners-Lee, who published the first public document about it in 1991. It originally consisted of 18 basic elements for simple websites. CSS was later added to help make websites look prettier. Many scripting languages existed in the early web, most notably Flash ActionScript. In 1995, the <i>horrid lifesucking abomination</i> known as JavaScript was born, and it eventually become the only available scripting language on the web <sup>(citation needed)</sup>. Please just take me back to the good old days of Flash applets where we don't have to deal with new libraries and frameworks and Electron and AnGulAR AaaȦ̷̭n̷̺͊Ď̵̦ WEB W̸E̴b̶B̴b̸b̸ ̶3̷.̴.̴.̶0̴.̵ 4.0 5̸̧̨̐̾̌͝!̵̝̖̹̥̄́̀̓ oh god TAK EI̵͈͂̽͝ ̴̩̪̘̺͔͉̔͐̋̎̋̿̕T̶̼͓͎̄̽̊͐͛̆̋͝A̸͔̣̯̜̖̲͖̮̗̅͛L̴̫̼͎̲̤͓͚͛̾̅̕L̵̨̬̫͕̙̮̞͑͊͒̓ ̸̞̠͈̫̖̤̱̝̊͂̎̄͌͊́̐͛͘B̶̤̙̙̼̣͍̹͉̻͓̋̀̽̈A̸͓̭̜͖͙̞͐̏̃̃͋̆̋̕͜Ć̶̤͓͉̺̖͔̹̝̉͛K̸̗͍̺̳̹̏͜͜ ̷̨͔̘̘̮͔͓͕̗̟̔̚A̶̧̨͎̯̣̯͍̤̦̓͊̍̋͑̓̍͂͝Ĥ̸̨̯̬͒͒̄͒̒͛H̷̘̲̮̀̋͛́̌͊̈̔̈́H̵͇̮̞̄͑̆͜H̴͚́͜H̶͇̦̲͍̐̃̍̚͝.
 			 </p>
-			 <a href="https://en.wikipedia.org/wiki/HTML>">SOURCE</a>
+			 <br>
+			 <i>*don't trust any of this information as it is most likely made up</i><br>
+			 <a href="https://en.wikipedia.org/wiki/HTML>">SOURCE (for the correct stuff)</a>
 		</article>
 		<article>
 			<!-- current news -->
@@ -126,7 +141,7 @@
 		<article>
 			<!-- future of tech -->
 			 <h1>Future of Tech</h1>
-			 FUTUREEE
+			 Flying cars. Hoverboards. Flashing neon signs on billboards. High above, aliens hover. Making home movies for the folks back home. These are a bunch of random statements that have nothing to do with the future. 
 		</article>
 	</div>
 </body>
