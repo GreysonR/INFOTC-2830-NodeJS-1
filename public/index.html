@@ -49,7 +49,7 @@
 			top: 0;
 		}
 
-		#content {
+		#main {
 			display: block;
 			
 			background: var(--white);
@@ -62,11 +62,13 @@
 			width: min(700px, 100vw);
 			height: min-content;
 		}
-		
-		article {
-			margin-top: 30px;
-			margin-bottom: 40px;
+
+		#mandatoryFlexbox {
+			display: flex;
+			flex-direction: column;
+			row-gap: 60px;
 		}
+		
 		h1 {
 			font-family: "Share", sans-serif;
 			font-weight: bold;
@@ -118,31 +120,33 @@
 	<!-- white font and black background -->
 	<nav>Greyson Rockwell</nav>
 
-	<div id="content">
+	<div id="main">
 		<div class="warning"><span class="highlight">WARNING:</span> This is a bunch of senseless rambling</div>
-		<article>
-			<!-- history -->
-			 <h1>History of HTML</h1>
-			 <p>
-				HTML was created by Tim Berners-Lee, who published the first public document about it in 1991. It originally consisted of 18 basic elements for simple websites. CSS was later added to help make websites look prettier. Many scripting languages existed in the early web, most notably Flash ActionScript. In 1995, the <i>horrid lifesucking abomination</i> known as JavaScript was born, and it eventually become the only available scripting language on the web <sup>(citation needed)</sup>. Please just take me back to the good old days of Flash applets where we don't have to deal with new libraries and frameworks and Electron and AnGulAR AaaȦ̷̭n̷̺͊Ď̵̦ WEB W̸E̴b̶B̴b̸b̸ ̶3̷.̴.̴.̶0̴.̵ 4.0 5̸̧̨̐̾̌͝!̵̝̖̹̥̄́̀̓ oh god TAK EI̵͈͂̽͝ ̴̩̪̘̺͔͉̔͐̋̎̋̿̕T̶̼͓͎̄̽̊͐͛̆̋͝A̸͔̣̯̜̖̲͖̮̗̅͛L̴̫̼͎̲̤͓͚͛̾̅̕L̵̨̬̫͕̙̮̞͑͊͒̓ ̸̞̠͈̫̖̤̱̝̊͂̎̄͌͊́̐͛͘B̶̤̙̙̼̣͍̹͉̻͓̋̀̽̈A̸͓̭̜͖͙̞͐̏̃̃͋̆̋̕͜Ć̶̤͓͉̺̖͔̹̝̉͛K̸̗͍̺̳̹̏͜͜ ̷̨͔̘̘̮͔͓͕̗̟̔̚A̶̧̨͎̯̣̯͍̤̦̓͊̍̋͑̓̍͂͝Ĥ̸̨̯̬͒͒̄͒̒͛H̷̘̲̮̀̋͛́̌͊̈̔̈́H̵͇̮̞̄͑̆͜H̴͚́͜H̶͇̦̲͍̐̃̍̚͝.
-			 </p>
-			 <br>
-			 <i>*don't trust any of this information as it is most likely made up</i><br>
-			 <a href="https://en.wikipedia.org/wiki/HTML>">SOURCE (for the correct stuff)</a>
-		</article>
-		<article>
-			<!-- current news -->
-			 <h1>The Election is Nigh</h1>
-			 <p>
-				Uh oh! Looks like you have to vote again... Or maybe not, if that's your thing (but I'll be disappointed).
-				As of November 3, 2024, Trump is favored to win the election with <a href="https://projects.fivethirtyeight.com/2024-election-forecast/">53:46 odds.</a> However, anything could happen, and we can't really be sure until the election happens. Of course, we all know Trump HAS to win after he <a href="https://www.msn.com/en-us/news/politics/took-the-just-put-the-fries-in-the-bag-bro-meme-quite-literally-internet-in-splits-as-donald-trump-posts-a-video-of-working-at-mcdonalds-at-x/ar-AA1sErKJ">put the fries in the bag</a> during a political stunt where he took over a McDonalds for a day. How can we trust our candidates if they don't know a thing about American culture (which is entirely propped up by McDonalds)? But then again, Harris may still stay in the running with her <a href="https://www.bbc.com/news/articles/cqqlgq7k374o">Brat Summer</a>. Except I listened to Brat and discovered I really don't like Electropop / Club music and went back to good 'ol <a href="https://www.youtube.com/watch?v=LwE4LNP8zsI">Radiohead</a>. So take what you will from that.
-			</p>
-		</article>
-		<article>
-			<!-- future of tech -->
-			 <h1>Future of Tech</h1>
-			 Flying cars. Hoverboards. Flashing neon signs on billboards. High above, aliens hover. Making home movies for the folks back home. These are a bunch of random statements that have nothing to do with the future. 
-		</article>
+		<div id="mandatoryFlexbox">
+			<article>
+				<!-- history -->
+				 <h1>History of HTML</h1>
+				 <p>
+					HTML was created by Tim Berners-Lee, who published the first public document about it in 1991. It originally consisted of 18 basic elements for simple websites. CSS was later added to help make websites look prettier. Many scripting languages existed in the early web, most notably Flash ActionScript. In 1995, the <i>horrid lifesucking abomination</i> known as JavaScript was born, and it eventually become the only available scripting language on the web <sup>(citation needed)</sup>. Please just take me back to the good old days of Flash applets where we don't have to deal with new libraries and frameworks and Electron and AnGulAR AaaȦ̷̭n̷̺͊Ď̵̦ WEB W̸E̴b̶B̴b̸b̸ ̶3̷.̴.̴.̶0̴.̵ 4.0 5̸̧̨̐̾̌͝!̵̝̖̹̥̄́̀̓ oh god TAK EI̵͈͂̽͝ ̴̩̪̘̺͔͉̔͐̋̎̋̿̕T̶̼͓͎̄̽̊͐͛̆̋͝A̸͔̣̯̜̖̲͖̮̗̅͛L̴̫̼͎̲̤͓͚͛̾̅̕L̵̨̬̫͕̙̮̞͑͊͒̓ ̸̞̠͈̫̖̤̱̝̊͂̎̄͌͊́̐͛͘B̶̤̙̙̼̣͍̹͉̻͓̋̀̽̈A̸͓̭̜͖͙̞͐̏̃̃͋̆̋̕͜Ć̶̤͓͉̺̖͔̹̝̉͛K̸̗͍̺̳̹̏͜͜ ̷̨͔̘̘̮͔͓͕̗̟̔̚A̶̧̨͎̯̣̯͍̤̦̓͊̍̋͑̓̍͂͝Ĥ̸̨̯̬͒͒̄͒̒͛H̷̘̲̮̀̋͛́̌͊̈̔̈́H̵͇̮̞̄͑̆͜H̴͚́͜H̶͇̦̲͍̐̃̍̚͝.
+				 </p>
+				 <br>
+				 <i>*don't trust any of this information as it is most likely made up</i><br>
+				 <a href="https://en.wikipedia.org/wiki/HTML>">SOURCE (for the correct stuff)</a>
+			</article>
+			<article>
+				<!-- current news -->
+				 <h1>The Election is Nigh</h1>
+				 <p>
+					Uh oh! Looks like you have to vote again... Or maybe not, if that's your thing (but I'll be disappointed).
+					As of November 3, 2024, Trump is favored to win the election with <a href="https://projects.fivethirtyeight.com/2024-election-forecast/">53:46 odds.</a> However, anything could happen, and we can't really be sure until the election happens. Of course, we all know Trump HAS to win after he <a href="https://www.msn.com/en-us/news/politics/took-the-just-put-the-fries-in-the-bag-bro-meme-quite-literally-internet-in-splits-as-donald-trump-posts-a-video-of-working-at-mcdonalds-at-x/ar-AA1sErKJ">put the fries in the bag</a> during a political stunt where he took over a McDonalds for a day. How can we trust our candidates if they don't know a thing about American culture (which is entirely propped up by McDonalds)? But then again, Harris may still stay in the running with her <a href="https://www.bbc.com/news/articles/cqqlgq7k374o">Brat Summer</a>. Except I listened to Brat and discovered I really don't like Electropop / Club music and went back to good 'ol <a href="https://www.youtube.com/watch?v=LwE4LNP8zsI">Radiohead</a>. So take what you will from that.
+				</p>
+			</article>
+			<article>
+				<!-- future of tech -->
+				 <h1>Future of Tech</h1>
+				 Flying cars. Hoverboards. Flashing neon signs on billboards. High above, aliens hover. Making home movies for the folks back home. These are a bunch of random statements that have nothing to do with the future. What does have to do with the <b><a href="https://www.theverge.com/2019/11/7/20953040/openai-text-generation-ai-gpt-2-full-model-release-1-5b-parameters">future is AI</a></b>, or at least that's what everyone's telling me. Hmm, I think I'll have one AI please. No, I don't want it to be a "<a href="https://arxiv.org/abs/2005.14165">few shot learner</a>," thank you very much. Yes, I'll invest $1 billion into your AI startup. Huh, that turned out surprisingly well. Anyways, 
+			</article>
+		</div>
 	</div>
 </body>
 </html>
