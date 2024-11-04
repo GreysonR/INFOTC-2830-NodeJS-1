@@ -1,8 +1,12 @@
 {
   "name": "infotc-2830-nodejs-1",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "github:GreysonR/INFOTC-2830-NodeJS-1"
+  },
   "scripts": {
     "start": "node ."
   },
@@ -11,5 +15,8 @@
   "description": "",
   "dependencies": {
     "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
