@@ -8,7 +8,7 @@ const app = express();
 const server = createServer(app);
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-app.get("/", (req, res) => {
+app.get("/", (_req, res) => {
 	res.sendFile(join(__dirname, "public/index.html"));
 });
 

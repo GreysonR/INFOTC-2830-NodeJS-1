@@ -5,9 +5,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Node.js Served Website</title>
 
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Share:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 	<style>
+		:root {
+			--white: "#FBFAF4";
+			--black: "#242325";
+			--primary: "#048A81";
+			--secondary: "#E8A6A3";
+			--warning: "#F2AF4B";
+		}
 		body {
 			margin: 0;
+			font-family: "PT Serif", serif;
+			color: var(--black);
+			background: var(--white);
+			font-size: 12pt;
+		}
+
+		#content {
+			display: block;
+			
+			background: var(--white);
+			box-shadow: 10px 10px 30px var(--black);
+
+			margin: 0 auto;
+			margin-top: 80px;
+			
+			width: min(750px, 100vw);
+			height: min-content;
+		}
+		
+		article {
+			margin-top: 30px;
+			margin-bottom: 40px;
+		}
+		h1 {
+			font-family: "Share", serif;
+			font-weight: bold;
+			color: var(--black);
+			font-size: 30pt;
+
+			margin: 0;
+			margin-top:    0px;
+			margin-bottom: 10px;
 		}
 	</style>
 </head>
@@ -15,15 +58,27 @@
 	<!-- white font and black background -->
 	<nav>Greyson Rockwell</nav>
 
-	<!-- 3 articles -->
-	<article>
-		<!-- history -->
-	</article>
-	<article>
-		<!-- current news -->
-	</article>
-	<article>
-		<!-- future of tech -->
-	</article>
+	<div id="content">
+		<article>
+			<!-- history -->
+			 <h1>History of HTML</h1>
+			 <p>
+				
+			 </p>
+			 <a href="https://en.wikipedia.org/wiki/HTML>">SOURCE</a>
+		</article>
+		<article>
+			<!-- current news -->
+			 <h1>The Election is Nigh</h1>
+			 <div class="warning">WARNING: This is a bunch of senseless rambling</div>
+			 <p>
+				Uh oh! Looks like you have to vote again... Or maybe not, if that's your thing (but I'll be disappointed).
+				As of November 3, 2024, Trump is favored to win the election with <a href="https://projects.fivethirtyeight.com/2024-election-forecast/">53:46 odds.</a> However, anything could happen, and we can't really be sure until the election happens. Of course, we all know Trump HAS to win after he <a href="https://www.msn.com/en-us/news/politics/took-the-just-put-the-fries-in-the-bag-bro-meme-quite-literally-internet-in-splits-as-donald-trump-posts-a-video-of-working-at-mcdonalds-at-x/ar-AA1sErKJ">put the fries in the bag</a> during a political stunt where he took over a McDonalds for a day. How can we trust our candidates if they don't know a thing about American culture (which is entirely propped up by McDonalds)? But then again, Harris may still stay in the running with her <a href="https://www.bbc.com/news/articles/cqqlgq7k374o">Brat Summer</a>. Except I listened to Brat and discovered I really don't like Electropop / Club music and went back to good 'ol <a href="https://www.youtube.com/watch?v=LwE4LNP8zsI">Radiohead</a>. So take what you will from that.
+			</p>
+		</article>
+		<article>
+			<!-- future of tech -->
+		</article>
+	</div>
 </body>
 </html>
